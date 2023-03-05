@@ -44,7 +44,7 @@
     <!-- <h1>Pass data to child component</h1>
     <child :name="name" :data="user" :getPassData="getPassData"></child> -->
     <!------------------------------------------------------------------------->
-    
+<users/>
     <!------------------------------------------------------------------------->
     <!------------------------------------------------------------------------->
     <!------------------------------------------------------------------------->
@@ -55,9 +55,11 @@
 </template>
 <script>
 import child from "./child.vue";
+import users from "./users.vue"
 export default {
   components: {
     child,
+    users
   },
   data() {
     return {
