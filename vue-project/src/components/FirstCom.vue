@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>New Component {{ "fadwaaaaaaaaaaaa".length }}</h1>
+    <!-- <h1>New Component {{ "fadwaaaaaaaaaaaa".length }}</h1>
     <h1>Name {{ getName("fadwa ali") }}</h1>
     <button v-on:click="eventFun()">Click</button>
     <button v-on:click="icreCount()">count</button>
@@ -12,15 +12,16 @@
     <br /><br />
     <input type="text" placeholder="Password" v-model="password"/>
     <br /><br />
-    <button type="button" v-on:click="GetData()">Get Data</button>
+    <button type="button" v-on:click="GetData()">Get Data</button> -->
     <h1>Get checkbox value</h1>
     <h1>Tecnology</h1>
     <label for="java">java</label>
-    <input type="checkbox" value="java" id="java">
+    <input type="checkbox" value="java" id="java" v-model="technology">
     <label for="python">python</label>
-    <input type="checkbox" value="python" id="python">
+    <input type="checkbox" value="python" id="python" v-model="technology">
     <label for="dart">dart</label>
-    <input type="checkbox" value="dart" id="dart">
+    <input type="checkbox" value="dart" id="dart" v-model="technology">
+    <h1 >Technology:{{ technology }} </h1>
 
   </div>
 </template>
