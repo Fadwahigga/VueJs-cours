@@ -66,18 +66,18 @@ export default {
   },
 
   methods: {
-    getName(name) {
-      return name;
-    },
-    eventFun() {
-      alert("Event Called");
-    },
-    icreCount() {
-      this.count = this.count + 1;
-    },
-    GetData() {
-      console.warn("values:", this.email, this.password);
-    },
+    // getName(name) {
+    //   return name;
+    // },
+    // eventFun() {
+    //   alert("Event Called");
+    // },
+    // icreCount() {
+    //   this.count = this.count + 1;
+    // },
+    // GetData() {
+    //   console.warn("values:", this.email, this.password);
+    // },
   },
 };
 </script>
