@@ -42,7 +42,7 @@
     </ul> -->
     <!------------------------------------------------------------------------->
     <h1>Pass data to child component</h1>
-    <child :name="name"></child>
+    <child :name="name" :data="user"></child>
 
     <!------------------------------------------------------------------------->
     <!------------------------------------------------------------------------->
@@ -62,6 +62,10 @@ export default {
   data() {
     return {
       name: "fadwa",
+      user:{
+        name:"fadwa ali",
+        email:"fadwa.ali20@gmail.com"
+      }
       // count: 0,
       // data: 100,
       // email: null,
