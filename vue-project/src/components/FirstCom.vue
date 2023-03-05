@@ -42,7 +42,7 @@
     </ul> -->
     <!------------------------------------------------------------------------->
     <h1>Pass data to child component</h1>
-    <child :name="name" :data="user"></child>
+    <child :name="name" :data="user" :getPassData="getPassData"></child>
 
     <!------------------------------------------------------------------------->
     <!------------------------------------------------------------------------->
@@ -89,6 +89,9 @@ export default {
     // GetData() {
     //   console.warn("values:", this.email, this.password);
     // },
+    getPassData(){
+      alert("pass function")
+    }
   },
 };
 </script>
