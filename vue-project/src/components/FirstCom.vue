@@ -13,6 +13,15 @@
     <input type="text" placeholder="Password" v-model="password"/>
     <br /><br />
     <button type="button" v-on:click="GetData()">Get Data</button>
+    <h1>Get checkbox value</h1>
+    <h1>Tecnology</h1>
+    <label for="java">java</label>
+    <input type="checkbox" value="java" id="java">
+    <label for="python">python</label>
+    <input type="checkbox" value="python" id="python">
+    <label for="dart">dart</label>
+    <input type="checkbox" value="dart" id="dart">
+
   </div>
 </template>
 <script>
