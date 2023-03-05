@@ -41,6 +41,8 @@
       <li v-for="item in technology" :key="item">{{ item }}</li>
     </ul> -->
     <!------------------------------------------------------------------------->
+    <h1>Pass data to child component</h1>
+    <child :name="name"></child>
 
     <!------------------------------------------------------------------------->
     <!------------------------------------------------------------------------->
@@ -52,9 +54,14 @@
   </div>
 </template>
 <script>
+import child from "./child.vue";
 export default {
+  components: {
+    child,
+  },
   data() {
     return {
+      name: "fadwa",
       // count: 0,
       // data: 100,
       // email: null,
