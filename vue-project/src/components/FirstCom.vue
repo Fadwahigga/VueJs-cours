@@ -21,6 +21,13 @@
     <input type="checkbox" value="python" id="python" v-model="technology">
     <label for="dart">dart</label>
     <input type="checkbox" value="dart" id="dart" v-model="technology">
+    <h1>Radio</h1>
+    <label for="dart">dart</label>
+    <input type="radio" value="dart" id="dart" v-model="technology" name="lang">
+    <label for="java">java</label>
+    <input type="radio" value="java" id="java" v-model="technology" name="lang">
+    <label for="python">python</label>
+    <input type="radio" value="python" id="python" v-model="technology" name="lang">
     <h1 >Technology:{{ technology }} </h1>
 
   </div>
