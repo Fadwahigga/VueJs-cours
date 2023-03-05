@@ -27,7 +27,7 @@
 <script>
 export default {
   data() {
-    return { count: 0, data: 100, email: null, password: null };
+    return { count: 0, data: 100, email: null, password: null, technology:[] };
   },
 
   methods: {
