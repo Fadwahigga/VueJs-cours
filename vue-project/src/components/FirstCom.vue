@@ -59,16 +59,16 @@ import child from "./child.vue";
 import users from "./users.vue"
 export default {
   components: {
-    child,
+    // child,
     users
   },
   data() {
     return {
-      name: "fadwa",
-      user:{
-        name:"fadwa ali",
-        email:"fadwa.ali20@gmail.com"
-      }
+      // name: "fadwa",
+      // user:{
+      //   name:"fadwa ali",
+      //   email:"fadwa.ali20@gmail.com"
+      // }
       // count: 0,
       // data: 100,
       // email: null,
