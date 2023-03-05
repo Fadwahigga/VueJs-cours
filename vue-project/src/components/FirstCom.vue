@@ -13,29 +13,42 @@
     <input type="text" placeholder="Password" v-model="password"/>
     <br /><br />
     <button type="button" v-on:click="GetData()">Get Data</button> -->
-    <h1>Get checkbox value</h1>
+    <!------------------------------------------------------------------------->
+    <!-- <h1>Get checkbox value</h1>
     <h1>Tecnology</h1>
     <label for="java">java</label>
-    <input type="checkbox" value="java" id="java" v-model="technology">
+    <input type="checkbox" value="java" id="java" v-model="technology" />
     <label for="python">python</label>
-    <input type="checkbox" value="python" id="python" v-model="technology">
+    <input type="checkbox" value="python" id="python" v-model="technology" />
     <label for="dart">dart</label>
-    <input type="checkbox" value="dart" id="dart" v-model="technology">
-    <h1>Radio</h1>
+    <input type="checkbox" value="dart" id="dart" v-model="technology" /> -->
+    <!------------------------------------------------------------------------->
+    <!-- <h1>Radio</h1>
     <label for="dart">dart</label>
-    <input type="radio" value="dart" id="dart" v-model="technology" name="lang">
+    <input type="radio" value="dart" id="dart" v-model="technology" />
     <label for="java">java</label>
-    <input type="radio" value="java" id="java" v-model="technology" name="lang">
+    <input type="radio" value="java" id="java" v-model="technology" />
     <label for="python">python</label>
-    <input type="radio" value="python" id="python" v-model="technology" name="lang">
-    <h1 >Technology:{{ technology }} </h1>
-
+    <input type="radio" value="python" id="python" v-model="technology" />
+    <h1>Technology:{{ technology }}</h1> -->
+    <!------------------------------------------------------------------------->
+    <h1>If-else condition</h1>
+    <h1 v-if="show">Condition in Vue Js</h1>
+    <button v-on:click="show=!show">Show And Hide</button>
+    <!------------------------------------------------------------------------->
   </div>
 </template>
 <script>
 export default {
   data() {
-    return { count: 0, data: 100, email: null, password: null, technology:[] };
+    return {
+      // count: 0,
+      // data: 100,
+      // email: null,
+      // password: null,
+      // technology: [],
+      show: true,
+    };
   },
 
   methods: {
@@ -48,7 +61,9 @@ export default {
     icreCount() {
       this.count = this.count + 1;
     },
-    GetData() { console.warn("values:",this.email,this.password)},
+    GetData() {
+      console.warn("values:", this.email, this.password);
+    },
   },
 };
 </script>
