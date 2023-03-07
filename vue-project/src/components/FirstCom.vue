@@ -44,9 +44,11 @@
     <!-- <h1>Pass data to child component</h1>
     <child :name="name" :data="user" :getPassData="getPassData"></child> -->
     <!------------------------------------------------------------------------->
-    <h1>Reuse component</h1>
-<users/>
+    <!-- <h1>Reuse component</h1>
+    <users /> -->
     <!------------------------------------------------------------------------->
+    <h1>CSS binding</h1>
+    <h1>Hello from CSS style</h1>
     <!------------------------------------------------------------------------->
     <!------------------------------------------------------------------------->
     <!------------------------------------------------------------------------->
@@ -56,11 +58,11 @@
 </template>
 <script>
 import child from "./child.vue";
-import users from "./users.vue"
+import users from "./users.vue";
 export default {
   components: {
     // child,
-    users
+    users,
   },
   data() {
     return {
@@ -92,9 +94,17 @@ export default {
     // GetData() {
     //   console.warn("values:", this.email, this.password);
     // },
-    getPassData(){
-      alert("pass function")
-    }
+    // getPassData(){
+    //   alert("pass function")
+    // }
   },
 };
 </script>
+<style scoped>
+.green {
+  background-color: royalblue;
+  width: 200;
+  padding: 10;
+  color: white;
+}
+</style>
