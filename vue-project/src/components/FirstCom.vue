@@ -56,6 +56,7 @@
     <Teacher :name="name"/> -->
     <!------------------------------------------------------------------------->
     <h1>Send Data Child to Parent components</h1>
+    <h2>User Child Name is : {{ name }}</h2>
     <UserChild :getUserChildName="getUserChildName" />
     <!------------------------------------------------------------------------->
     <!------------------------------------------------------------------------->
@@ -114,7 +115,7 @@ export default {
     //   alert("pass function")
     // }
     getUserChildName(name) {
-      alert(name);
+      this.name= name
     },
   },
 };
