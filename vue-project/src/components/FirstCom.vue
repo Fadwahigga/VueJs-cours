@@ -48,7 +48,8 @@
     <users /> -->
     <!------------------------------------------------------------------------->
     <h1>CSS binding</h1>
-    <h1 class="green">Hello from CSS style</h1>
+    <h1 :class="{green :CSSbinding }">Hello from CSS style</h1>
+    <button v-on:click="CSSbinding=!CSSbinding">CSS binding</button>
     <!------------------------------------------------------------------------->
     <!------------------------------------------------------------------------->
     <!------------------------------------------------------------------------->
@@ -78,6 +79,7 @@ export default {
       // technology: [],
       // show: true,
       // technology: ["java", "python", "dart", "flutter", "c++"],
+      CSSbinding:true,
     };
   },
 
