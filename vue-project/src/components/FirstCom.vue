@@ -51,6 +51,8 @@
     <h1 :class="{green :CSSbinding }">Hello from CSS style</h1>
     <button v-on:click="CSSbinding=!CSSbinding">CSS binding</button> -->
     <!------------------------------------------------------------------------->
+    <h1>Props in Vue Js</h1>
+    <Student/>
     <!------------------------------------------------------------------------->
     <!------------------------------------------------------------------------->
     <!------------------------------------------------------------------------->
@@ -58,12 +60,14 @@
   </div>
 </template>
 <script>
-import child from "./child.vue";
-import users from "./users.vue";
+// import child from "./child.vue";
+// import users from "./users.vue";
+import Student from './Student.vue'
 export default {
   components: {
     // child,
     // users,
+    Student
   },
   data() {
     return {
