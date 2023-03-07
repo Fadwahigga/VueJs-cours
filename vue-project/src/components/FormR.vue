@@ -1,5 +1,6 @@
 <template>
   <div>
+    <p>{{ form }}</p>
     <h1>Form component</h1>
     <form>
       <label>Name : </label>
