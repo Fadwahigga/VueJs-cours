@@ -52,8 +52,8 @@
     <button v-on:click="CSSbinding=!CSSbinding">CSS binding</button> -->
     <!------------------------------------------------------------------------->
     <h1>Props in Vue Js</h1>
-    <Student/>
-    <Teacher/>
+    <Student name="Fadwa"/>
+    <Teacher name="Ali"/>
     <!------------------------------------------------------------------------->
     <!------------------------------------------------------------------------->
     <!------------------------------------------------------------------------->
@@ -87,6 +87,7 @@ export default {
       // show: true,
       // technology: ["java", "python", "dart", "flutter", "c++"],
       // CSSbinding:true,
+      name:'ali'
     };
   },
 
