@@ -28,10 +28,10 @@ export default {
       },
     };
   },
-  methods:{
-    Login(){
-        console.warn(this.form)
-    }
-  }
+  methods: {
+    Login() {
+      console.warn(this.form);
+    },
+  },
 };
 </script>
