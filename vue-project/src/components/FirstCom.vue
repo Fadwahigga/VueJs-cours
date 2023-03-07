@@ -56,18 +56,18 @@
     <Teacher :name="name"/> -->
     <!------------------------------------------------------------------------->
     <h1>Send Data Child to Parent components</h1>
-    <UserChildVue/>
+    <UserChild :getUserChildName="getUserChildName" />
     <!------------------------------------------------------------------------->
     <!------------------------------------------------------------------------->
     <!------------------------------------------------------------------------->
   </div>
 </template>
 <script>
-import UserChildVue from './UserChild.vue';
 // import child from "./child.vue";
 // import users from "./users.vue";
 // import Student from './Student.vue'
 // import Teacher from './Teacher.vue'
+import UserChild from "./UserChild.vue";
 
 export default {
   components: {
@@ -75,7 +75,7 @@ export default {
     // users,
     // Student,
     // Teacher
-    UserChildVue
+    UserChild,
   },
   data() {
     return {
@@ -93,6 +93,7 @@ export default {
       // technology: ["java", "python", "dart", "flutter", "c++"],
       // CSSbinding:true,
       // name:'ali'
+      name: "",
     };
   },
 
@@ -112,6 +113,9 @@ export default {
     // getPassData(){
     //   alert("pass function")
     // }
+    getUserChildName(name) {
+      alert(name);
+    },
   },
 };
 </script>
