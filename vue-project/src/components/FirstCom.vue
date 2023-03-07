@@ -104,7 +104,7 @@ export default {
 </script>
 <style scoped>
 .green {
-  background-color: royalblue;
+  background-color: red;
   width: 200;
   padding: 10;
   color: white;
