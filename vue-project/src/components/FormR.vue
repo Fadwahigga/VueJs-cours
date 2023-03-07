@@ -2,14 +2,36 @@
   <div>
     <h1>Form component</h1>
     <form>
-      <label>Name :</label> <input type="text" placeholder="Enter Email" />
+      <label>Name : </label>
+      <input type="text" placeholder="Enter Email" v-model="form.email" />
       <br /><br />
 
       <label>Password : </label>
-      <input type="password" placeholder="Enter Password" /> <br /><br />
+      <input
+        type="password"
+        placeholder="Enter Password"
+        v-model="form.password"
+      />
       <br /><br />
-      <button type="button">LogIn</button>
+      <br /><br />
+      <button type="button" v-on:click="Login">LogIn</button>
     </form>
   </div>
 </template>
-<script></script>
+<script>
+export default {
+  data() {
+    return {
+      form: {
+        email: "",
+        password: "",
+      },
+    };
+  },
+  methods:{
+    Login(){
+        console.warn(this.form)
+    }
+  }
+};
+</script>
