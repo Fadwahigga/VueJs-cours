@@ -62,16 +62,19 @@
   </div>
 </template>
 <script>
+import UserChildVue from './UserChild.vue';
 // import child from "./child.vue";
 // import users from "./users.vue";
 // import Student from './Student.vue'
 // import Teacher from './Teacher.vue'
+
 export default {
   components: {
     // child,
     // users,
     // Student,
     // Teacher
+    UserChildVue
   },
   data() {
     return {
