@@ -1,5 +1,7 @@
 <script setup>
-import FirstCom from "./components/FirstCom.vue";
+// import FirstCom from "./components/FirstCom.vue";
+import FormR from "./components/FormR.vue";
+
 </script>
 
 <template>
@@ -11,7 +13,8 @@ import FirstCom from "./components/FirstCom.vue";
       width="125"
       height="125"
     />
-    <FirstCom />
+    <!-- <FirstCom /> -->
+    <FormR />
   </div>
 </template>
 
