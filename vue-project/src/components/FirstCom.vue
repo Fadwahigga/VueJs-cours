@@ -47,9 +47,9 @@
     <!-- <h1>Reuse component</h1>
     <users /> -->
     <!------------------------------------------------------------------------->
-    <h1>CSS binding</h1>
+    <!-- <h1>CSS binding</h1>
     <h1 :class="{green :CSSbinding }">Hello from CSS style</h1>
-    <button v-on:click="CSSbinding=!CSSbinding">CSS binding</button>
+    <button v-on:click="CSSbinding=!CSSbinding">CSS binding</button> -->
     <!------------------------------------------------------------------------->
     <!------------------------------------------------------------------------->
     <!------------------------------------------------------------------------->
@@ -63,7 +63,7 @@ import users from "./users.vue";
 export default {
   components: {
     // child,
-    users,
+    // users,
   },
   data() {
     return {
@@ -79,7 +79,7 @@ export default {
       // technology: [],
       // show: true,
       // technology: ["java", "python", "dart", "flutter", "c++"],
-      CSSbinding:true,
+      // CSSbinding:true,
     };
   },
 
@@ -102,11 +102,11 @@ export default {
   },
 };
 </script>
-<style scoped>
+<!-- <style scoped>
 .green {
   background-color: red;
   width: 200;
   padding: 10;
   color: white;
 }
-</style>
+</style> -->
