@@ -53,6 +53,7 @@
     <!------------------------------------------------------------------------->
     <h1>Props in Vue Js</h1>
     <Student/>
+    <Teacher/>
     <!------------------------------------------------------------------------->
     <!------------------------------------------------------------------------->
     <!------------------------------------------------------------------------->
@@ -63,11 +64,13 @@
 // import child from "./child.vue";
 // import users from "./users.vue";
 import Student from './Student.vue'
+import Teacher from './Teacher.vue'
 export default {
   components: {
     // child,
     // users,
-    Student
+    Student,
+    Teacher
   },
   data() {
     return {
