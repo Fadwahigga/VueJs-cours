@@ -23,10 +23,10 @@
       <br /><br />
       <h1>Gender :</h1>
       <label>Female: </label>
-      <input type="radio" name="gender" v-model="form.gender" />
+      <input type="radio" name="gender" value="female" v-model="form.gender" />
       <br /><br />
       <label>Male : </label>
-      <input type="radio" name="gender" v-model="form.gender" />
+      <input type="radio" name="gender" value="male" v-model="form.gender" />
       <br /><br />
       <button type="button" v-on:click="Login">LogIn</button>
     </form>
