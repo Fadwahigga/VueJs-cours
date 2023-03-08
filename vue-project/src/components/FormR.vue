@@ -5,6 +5,7 @@
     <form>
       <label>Name : </label>
       <input type="text" placeholder="Enter Email" v-model="form.email" />
+
       <br /><br />
 
       <label>Password : </label>
