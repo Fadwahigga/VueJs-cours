@@ -15,7 +15,7 @@
         v-model="form.password"
       />
       <br /><br />
-      <h1>Country : </h1>
+      <h1>Country :</h1>
       <select v-model="form.country">
         <option>Sudan</option>
         <option>USA</option>
@@ -27,6 +27,13 @@
       <br /><br />
       <label>Male : </label>
       <input type="radio" name="gender" value="male" v-model="form.gender" />
+      <br /><br />
+      <h1>Tecnology :</h1>
+      <label>Dart: </label>
+      <input type="checkbox" value="Dart" v-model="form.technology" />
+      <br /><br />
+      <label>Java : </label>
+      <input type="checkbox" value="Java" v-model="form.technology" />
       <br /><br />
       <button type="button" v-on:click="Login">LogIn</button>
     </form>
