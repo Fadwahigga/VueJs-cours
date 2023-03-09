@@ -1,6 +1,9 @@
 <template>
   <div>
     <p>{{ form }}</p>
+    <ul>
+      <li v-for="item in error" v-bind:key="item">{{ item }} is valid</li>
+    </ul>
     <h1>Form component</h1>
     <form>
       <label>Name : </label>
