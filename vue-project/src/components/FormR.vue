@@ -50,11 +50,22 @@ export default {
         gender: "",
         technology: [],
       },
+      error: [],
     };
   },
   methods: {
     Login() {
       console.warn(this.form);
+      this.error = [];
+      for (const item in this.form) {
+        if (this.form[item] === "" || this.form[item].lenght === 0) {
+          this.error.push(item);
+        }
+      }
+      if (this.error.length === 0) {
+        alert("Data Has Been Submitted");
+      }
+      console.warn(this.error);
     },
   },
 };
